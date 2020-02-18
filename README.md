@@ -15,7 +15,16 @@ Now you should change the permisions of the files to add the execute permision. 
 
 ```bash
 
-chmod +x UsefulArchScripts/*.sh
+  chmod +x UsefulArchScripts/*.sh
 
 ```
 
+## Run
+
+For example if you want to run updateAndClean.sh
+
+```bash
+
+  ./updateAndClean.sh
+
+```
