@@ -1,0 +1,11 @@
+#!/bin/bash
+echo omnissiah > /etc/hostname
+ln -sf /usr/share/zoneinfo/Europe/Madrid /etc/localtime
+locale-gen
+hwclock -w
+#grub
+grub-install --efi-directory=/boot/efi --bootloader-id='Arch Linux' --target=x86_64-efi
+os-prober
+grub-mkconfig -o /boot/grub/grub.cfg
+#user 
+useradd -m -g users -G audio,lp,optical,storage,video,wheel,games,power,scanner -s /bin/bash diego
