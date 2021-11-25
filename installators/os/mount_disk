@@ -1,0 +1,6 @@
+#!/bin/bash
+mount /dev/sda2 /mnt
+mkdir /mnt/home
+mkdir -p /mnt/boot/efi
+mount /dev/sda1 /mnt/boot/efi
+mount /dev/sda4 /mnt/home
